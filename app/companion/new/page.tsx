@@ -23,11 +23,11 @@ const NewCompanion  = async () => {
             ) : (
 
                 <article className='companion-limit'>
-                    <Image src="/icons/limit.svg" alt="limit" width={360} height={230}/>
+                    <Image src="/images/limit.svg" alt="limit" width={360} height={230}/>
                     <div className="cta-badge">
-                        Upgrade your plan to create more companions.
+                        Upgrade your plan.
                     </div>
-                    <h1>You’ve Reached Your Limit</h1>
+                    <h1 className="flex w-full items-center justifiy-center">You’ve Reached Your Limit</h1>
                     <p>You’ve reached your companion limit. Upgrade to create more companions and premium features.</p>
                     <Link
                         href="/subscriptions"
