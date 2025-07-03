@@ -8,7 +8,7 @@ const Navbar = () => {
   return (
     <nav className='navbar'>
         <Link href="/">
-            <div className="flex items-center gap-2.5 cursor-pointer">
+            <div className="flex items-center gap-2.5 cursor-pointer ">
               <Image
                 src="/images/logo.png"
                 alt="logo"
@@ -21,7 +21,7 @@ const Navbar = () => {
             <NavItems/>
             <SignedOut>
                 <SignInButton>
-                    <button className="btn btn-signin">Sign-in</button>
+                    <button className="btn btn-signin md:font-[23px]">Sign-in</button>
                 </SignInButton>
             </SignedOut>
             <SignedIn>
