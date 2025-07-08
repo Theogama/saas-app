@@ -5,6 +5,7 @@ import Navbar from "@/components/Navbar";
 import "./globals.css";
 import Footer from "@/components/Footer";
 
+
 const bricolage = Bricolage_Grotesque({
   variable: "--font-bricolage",
   subsets: ["latin"],
@@ -25,6 +26,7 @@ export default function RootLayout({
       <html lang="en">
         <body className={`${bricolage.variable} antialiased`}>
           <Navbar />
+          
           {children}
         </body>
       </html>
