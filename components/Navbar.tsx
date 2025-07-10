@@ -12,8 +12,8 @@ const Navbar = () => {
               <Image
                 src="/images/logo.png"
                 alt="logo"
-                width={156}
-                height={154}
+                width={126}
+                height={124}
             />
             </div>
         </Link>
@@ -21,7 +21,7 @@ const Navbar = () => {
             <NavItems/>
             <SignedOut>
                 <SignInButton>
-                    <button className="btn btn-signin md:font-[23px]">Sign-in</button>
+                    <button className="btn btn-sign-in md:font-[23px]">Sign-in</button>
                 </SignInButton>
             </SignedOut>
             <SignedIn>

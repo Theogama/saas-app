@@ -1,6 +1,7 @@
 import CompanionCard from '@/components/CompanionCard';
 import CompanionList from '@/components/CompanionList';
 import CTA from '@/components/CTA';
+import HeroSection from '@/components/HeroSection';
 import { Button } from '@/components/ui/button'
 import { recentSessions } from '@/constants';
 import {getAllCompanions, getRecentSessions} from "@/lib/actions/companion.actions";
@@ -9,9 +10,10 @@ import {getSubjectColor} from "@/lib/utils";
 
 const Page = async () =>  {
   const companions = await getAllCompanions({ limit: 3 });
-  const recentSessionsCompanions = await getRecentSessions(6);
+  const recentSessionsCompanions = await getRecentSessions(5);
   return (
     <main>
+      <HeroSection />
       <h1 >Popular Compainons</h1>
       <section className="home-section">
             {companions.map((companion) => (
